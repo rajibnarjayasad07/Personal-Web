@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+
+
+body {
+    background-color: black;
+    font-family: 'Poppins';
+    font-color: white;
+}
+
+.logo {
+    font-family: 'Kanit';
+}
+
+.text-title {
+    font-family: 'Kanit';
+}
+
+.homepage .text-title h1 {
+    white-space: nowrap;
+}
+
+.social-icon:hover svg {
+    fill: #F87171; /* Warna merah yang diinginkan saat hover */
+    transition: fill 0.3s ease; /* Animasi transisi warna */
+}
+
+
+.animate-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    vertical-align: bottom;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: red;
+    }
+}
+
+#navbar-sticky.active {
+    display: block;
+  }
+
+  /* Aturan gaya untuk tampilan mobile, iPad, dan tablet */
+@media screen and (max-width: 1024px) {
+    .homepage {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-top: 185px; /* Tinggi navbar */
+    }
+
+    /* Foto ditempatkan di atas teks dan diberi jarak dengan navbar */
+    .homepage img {
+      margin-bottom: 30px; /* Jarak 10px antara gambar dan teks */
+      margin-top: 1px; /* Jarak 10px antara gambar dan navbar */
+      max-width: 100%; /* Lebar maksimum gambar */
+    }
+  
+    /* Teks ditempatkan di bawah gambar dan ukuran diperkecil */
+    .text-title {
+      text-align: center; /* Pusatkan teks */
+      margin-bottom: 20px; /* Jarak 20px antara gambar dan teks */
+      max-width: 90%; /* Lebar maksimum teks */
+      font-size: 14px; /* Perkecil ukuran teks */
+    }
+
+    .text-title h1 {
+      font-size: 1.5rem; /* Ukuran font untuk h1 pada mobile */
+    }
+  
+    .text-title h2 {
+      font-size: 1.25rem; /* Ukuran font untuk h2 pada mobile */
+    }
+}
+
+
+
+  
+
